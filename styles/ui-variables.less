@@ -1,33 +1,55 @@
 // Change these variables to modify your theme!
 
+@red   : #F2777A;
+@orange: #F99157;
+@yellow: #FFCC66;
+@green : #99CC99;
+@aqua  : #66CCCC;
+@blue  : #6699CC;
+@purple: #CC99CC;
+@brown : #A3685A;
+
+@shade0: #1D1F21;
+@shade1: #2D2D2D;
+@shade2: #393939;
+@shade3: #515151;
+@shade4: #999999;
+@shade5: #CCCCCC;
+@shade6: #E0E0E0;
+@shade7: #FFFFFF;
+
 //=============================== Components ===========================//
 
 //== Toolbar
-@toolbar-background-color: darken(@white, 17.5%);
+@toolbar-background-color: @shade0;
 
 //== Account Sidebar
-@panel-background-color:         @gray-lighter;
-@source-list-bg:                 @panel-background-color;
-@source-list-active-bg:          @panel-background-color;
-@source-list-active-color:       @component-active-color;
+@panel-background-color:         @shade1;
+
+@source-list-bg:                 @shade1;
+@source-list-active-bg:          @shade2;
+@source-list-active-color:       @shade7;
 
 //== Thread List (e.g, `.list-group-item`, `.list-item`)
-@list-bg:                  @white;
-@list-border:              #ddd;
-@list-hover-bg:            darken(@list-bg, 4%);
-@list-focused-color:       @list-bg;
-@list-focused-bg:          @component-active-color;
-@list-focused-border:      @list-focused-bg;
+@list-bg:                  @shade2;
+@list-border:              @shade1;
+
+@list-hover-bg:            @shade1;
+
+@list-focused-color:       @shade7;
+@list-focused-bg:          @shade3;
+@list-focused-border:      @shade2;
+
 @list-selected-color:      inherit;
-@list-selected-bg:         mix(@component-active-color, @list-bg, 17%);
-@list-selected-border:     mix(@component-active-color, @list-bg, 50%);
+@list-selected-bg:         @shade1;
+@list-selected-border:     @shade0;
 
 //== Notifications
-@background-color-info: @blue-light;
-@background-color-success: #009ec4;
-@background-color-warning: #ff4800;
-@background-color-error: #f15f4b;
-@background-color-pending: #b4babd;
+@background-color-info: @aqua;
+@background-color-success: @blue;
+@background-color-warning: @orange;
+@background-color-error: @red;
+@background-color-pending: @shade5;
 
 //== Menus
 @menu-item-color-hover: fade(@blue-light, 10%);
@@ -40,30 +62,30 @@
 @component-icon-padding: 5px;
 @component-icon-size: 16px;
 @component-line-height: 25px;
-@component-border-radius: 2px;
+@component-border-radius: 0;
 
 
 //=============================== Colors ===============================//
 
-@accent-primary:      @blue;
-@accent-primary-dark: @blue-dark;
+@accent-primary:      @red;
+@accent-primary-dark: @orange;
 
-@background-primary:     @white;
-@background-off-primary: #fdfdfd;
-@background-secondary:   #f6f6f6;
-@background-tertiary:    #6d7987;
+@background-primary:     @shade2;
+@background-off-primary: @shade1;
+@background-secondary:   @shade3;
+@background-tertiary:    @shade4;
 
-@color-info:    @blue-dark;
-@color-success: #5CB346;
-@color-warning: #f0ad4e;
-@color-error:   #d9534f;
-@color-danger:  #d9534f;
+@color-info:    @aqua;
+@color-success: @green;
+@color-warning: @orange;
+@color-error:   @red;
+@color-danger:  @red;
 
 @component-active-color:        @accent-primary-dark;
 @component-active-bg:           @background-primary;
 
-@background-gradient: linear-gradient(to top, rgba(241,241,241,0.75) 0%,
-rgba(253,253,253,0.75) 100%);
+@background-gradient: linear-gradient(to top, @shade2 0%,
+@shade3 100%);
 
 @border-color-primary: darken(@background-primary, 10%);
 @border-color-secondary: darken(@background-secondary, 10%);
@@ -73,11 +95,11 @@ rgba(253,253,253,0.75) 100%);
 //============================= Typography =============================//
 
 // ----- Colors -----
-@text-color:         @black;
-@text-color-inverse: @white;
+@text-color:         @shade5;
+@text-color-inverse: @shade1;
 
-@text-color-heading: #434648;
+@text-color-heading: @shade6;
 
 @text-color-link:        @blue;
-@text-color-link-hover:  @blue-dark;
-@text-color-link-active: @blue-dark;
+@text-color-link-hover:  @aqua;
+@text-color-link-active: @aqua;

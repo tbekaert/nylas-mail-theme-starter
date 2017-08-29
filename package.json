@@ -1,7 +1,7 @@
 {
-  "name": "",
-  "title": "",
-  "displayName": "",
+  "name": "tomorrow_eighties",
+  "title": "tomorrow_eigties",
+  "displayName": "tomorrow_eigties",
   "theme": "ui",
   "version": "0.1.0",
   "description": "",
@@ -11,4 +11,3 @@
   },
   "private": true
 }
-
